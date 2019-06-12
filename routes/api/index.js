@@ -9,15 +9,21 @@ const router = require("express").Router();
 |*  SET UP INDIVIDUAL API ROUTES  *|
 |**********************************/
 // Import in individual routes
-const collectionNameRoutes = require("./collectionName");
-const scrapeRoutes = require("./scrape");
+const aboutRoutes = require("./about");
+const contactRoutes = require("./contact");
+const hoursRoutes = require("./hours");
+const imagesRoutes = require("./images");
+const servicesRoutes = require("./services");
 
 // Sets path to use individual routes
 // EXAMPLE:
 //   router.use("/collectionName", collectionNameRoutes);
 //   // www.url.com/api/collectionName will use routes from collectionNameRoutes
-router.use("/collectionName", collectionNameRoutes);
-router.use("/scrape", scrapeRoutes);
+router.use("/about", aboutRoutes);
+router.use("/contact", contactRoutes);
+router.use("/hours", hoursRoutes);
+router.use("/images", imagesRoutes);
+router.use("/services", servicesRoutes);
 
 /***********|
 |* EXPORTS *| 
