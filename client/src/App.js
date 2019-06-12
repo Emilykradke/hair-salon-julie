@@ -1,23 +1,23 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import XPage from './pages/XPage';
-import XPageTwo from './pages/XPageTwo'
-import XCollection from './pages/XCollection'
-import XNoMatch from './pages/XNoMatch';
-import { XNav } from './components/XNav';
+import Nav from './components/Nav';
+import Admin from './pages/Admin';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
-    return <Router forceRefresh={!'pushState' in window.history}>
-      <div>
-        <XNav />
+    return <Router>
+      <Fragment>
+        <Nav />
         <Switch>
-          <Route exact path='/' component={XPage} />
-          <Route exact path='/XPageTwo' component={XPageTwo} />
-          <Route exact path='/XCollection/:id' component={XCollection} />
-          <Route component={XNoMatch} />
+          <Route exact path='/Admin'>
+            <Admin>
+              
+            </Admin>
+          </Route>
         </Switch>
-      </div>
+        <Footer />
+      </Fragment>
     </Router>
   }
 };
