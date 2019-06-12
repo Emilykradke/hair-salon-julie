@@ -18,6 +18,9 @@ let ContactSchema = new Schema({
     },
     suite: {
         type: String
+    },
+    title: {
+        type: String
     }
 })
 
