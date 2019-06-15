@@ -1,20 +1,43 @@
 import axios from "axios";
 
 export default {
-  // Gets all Documents
-  getDocuments: function() {
-    return axios.get("/api/collectionName");
-  },
-  // Gets the Document with the given id
-  getDocument: function(id) {
-    return axios.get("/api/collectionName/" + id);
-  },
-  // Deletes the Document with the given id
-  deleteDocument: function(id) {
-    return axios.delete("/api/collectionName/" + id);
-  },
-  // Saves a book to the database
-  saveBook: function(bookData) {
-    return axios.post("/api/collectionName", bookData);
-  }
+    getAbout: function() {
+        return axios.get("/api/about")
+    },
+    postAbout: function() {
+        return axios.post("/api/about")
+    },
+    deleteAbout: function() {
+        return axios.delete("/api/about")
+    },
+    getContact: function() {
+        return axios.get("/api/contact")
+    },
+    updateContact: function() {
+        return axios.put("/api/contact")
+    },
+    getHours: function() {
+        return axios.get("/api/hours")
+    },
+    updateHours: function() {
+        return axios.put("/api/hours")
+    },
+    getImages: function() {
+        return axios.get("/api/images")
+    },
+    postImages: function() {
+        return axios.get("/api/images")
+    },
+    deleteImages: function() {
+        return axios.delete("/api/images")
+    },
+    getServices: function() {
+        return axios.get("/api/services")
+    },
+    postServices: function() {
+        return axios.post("/api/services")
+    },
+    deleteServices: function() {
+        return axios.delete("/api/services")
+    }
 };
