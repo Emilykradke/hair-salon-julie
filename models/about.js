@@ -4,6 +4,9 @@ let AboutSchema = new Schema({
     title: {
         type: String
     },
+    header: {
+        type: String
+    },
     description: {
         type: String
     }
