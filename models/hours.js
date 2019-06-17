@@ -1,31 +1,16 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 let HoursSchema = new Schema({
-    title: {
+    day: {
         type: String
     },
-    sunday: {
+    open: {
         type: String
     },
-    monday: {
-        type: String
-    },
-    tuesday: {
-        type: String
-    },
-    wednesday: {
-        type: String
-    },
-    thursday: {
-        type: String
-    },
-    friday: {
-        type: String
-    },
-    saturday: {
+    close: {
         type: String
     }
-})
+})  
 
 let Hours = mongoose.model('Hours', HoursSchema)
 
