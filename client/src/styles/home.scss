@@ -1,0 +1,23 @@
+.home-container{
+  height: 85vh;
+  
+  .hero {
+    height: calc(100% - 130px);
+    background-image: url("../images/blonde-trees.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.10);
+
+    @media all and (min-width: 768px)  {
+      height: calc(100% - 195px);
+
+    }
+  }
+}
