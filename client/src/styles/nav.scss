@@ -1,0 +1,73 @@
+.nav-container {
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.10);
+  background-color: $bg-dark;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  nav {
+    height: 75px;
+    font-family: $font-body;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    color: $font-light;
+    max-width: 80%;
+    letter-spacing: 1.5px;
+
+    @media all and (min-width: 768px) {
+      max-width: 80%;
+    }
+
+    .nav-list {
+
+      li {
+        list-style: none;
+        }
+
+      a {
+        text-decoration: none;
+        padding-right: 20px;
+        color: $bg-light;
+      }
+    }
+
+    .nav-buttons {
+
+      li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 20px;
+
+        .appointment-link {
+          text-decoration: none;
+          padding: 10px 20px;
+          background-color: $bg-light;
+          color: $font-dark;
+          font-weight: bold;
+          border-radius: 2px;
+          margin-right: 20px;
+        }
+
+        a {
+          text-decoration: none;
+          color: $bg-light;
+            
+          i {
+            font-size: 30px;
+            line-height: 0;
+            position: relative; 
+            top: 6px;
+          }
+        }
+      }
+
+      
+    }
+  }
+}
