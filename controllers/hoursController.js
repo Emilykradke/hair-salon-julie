@@ -8,7 +8,7 @@ module.exports = {
     },
     update: function (req, res) {
         db.Hours
-            .findOneAndUpdate({ title: "Hours" }, req.body)
+            .findOneAndUpdate({ _id: id }, req.body)
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
     },

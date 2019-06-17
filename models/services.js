@@ -1,10 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 let ServicesSchema = new Schema({
+    title: {
+        type: String
+    },
     description: {
         type: String
     },
-    title: {
+    image: {
         type: String
     }
 })
