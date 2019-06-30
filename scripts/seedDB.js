@@ -83,44 +83,64 @@ const imagesSeed = [
 
 const servicesSeed = [
     {
-        title: "",
-        description: "",
-        image: ""
+        title: "Toner Color",
+        description: "Non-ammonia, deep conditioning, high shine pigment that enhances desired tones and minimizes undesirable ones",
+        image: "https://i.ibb.co/rt6PFCV/toner.png"
     },
     {
-        title: "",
-        description: "",
-        image: ""
+        title: "Olaplex Treatment",
+        description: "Protein treatment designed to strengthen hair and prevent additional damage",
+        image: "https://i.ibb.co/wSTqdhd/olaplex.png"
     },
     {
-        title: "",
-        description: "",
-        image: ""
+        title: "Keratin Smoothing Treatment",
+        description: "Curl reduction and anti-humidity treatment",
+        image: "https://i.ibb.co/s92YFXd/keratin.png"
     },
     {
-        title: "",
-        description: "",
-        image: ""
+        title: "Balayage-Ombre",
+        description: "Free-hand painted highlights, creating a soft and natural gradation of lightness towards the ends. Customized, natural-looking placement, allows for a softer grow out and longer periods between touch ups",
+        image: "https://i.ibb.co/dBrY4mR/balayage.png"
     },
     {
-        title: "",
-        description: "",
-        image: ""
+        title: "Highlights and Lowlights",
+        description: "A seamless blend of lighter and darker colors to create the desired effect",
+        image: "https://i.ibb.co/D8HpMpF/highlight-lowlight.png"
     },
     {
-        title: "",
-        description: "",
-        image: ""
+        title: "Full Color",
+        description: "Color from roots to ends",
+        image: "https://i.ibb.co/rfBVJt1/full-color.png"
     },
     {
-        title: "",
-        description: "",
-        image: ""
+        title: "Root Touch-Up",
+        description: "Color application on root area",
+        image: "https://i.ibb.co/31t82TK/roots.png"
+    }, 
+    {
+      title: "Special Occasion Updo",
+      description: "Customized style according to occasion and personal style",
+      image: "https://i.ibb.co/tKsc45y/updo.png"
+    }, 
+    {
+      title: "Men's Haircut - 13 years and older",
+      description: "Shampoo, haircut, and style",
+      image: "https://i.ibb.co/2K9wrJN/mens.png"
+    }, 
+    {
+      title: "Women's Haircut and Style - 13 years and older",
+      description: "Shampoo, hair reshaping, and style",
+      image: "https://i.ibb.co/R75b8pp/womens-haircut.png"
+    }, 
+    {
+      title: "Children's Haircut - 1-12 years old",
+      description: "Haircut and style",
+      image: "https://i.ibb.co/Rv85mgS/childrensl.png"
     },
     {
-        title: "",
-        description: "",
-        image: ""
+      title: "Facial Waxing",
+      description: "Safe hair removal with special skin-sensitive cream wax",
+      image: "https://i.ibb.co/d5LLwJ5/wax.jpg"
     }
 ]
 
@@ -176,7 +196,6 @@ db.Services
     })
     .catch(err => {
         console.error(err);
-        process.exit(1)
     })
 
 

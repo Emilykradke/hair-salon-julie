@@ -29,12 +29,17 @@
     margin: 30px;
     padding: 15px;
     width: 270px;
-    height: 270px;
+    // height: 270px;
     border-radius: 6px;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    img {
+      height: 300px;
+      width: 300px;
+    }
   }
 }
