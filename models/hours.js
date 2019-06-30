@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 let HoursSchema = new Schema({
+    active: {
+        type: Boolean,
+        default: true
+    },
     day: {
         type: String
     },
