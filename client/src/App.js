@@ -29,7 +29,7 @@ class App extends Component {
     let burgerMenu;
     let backdrop;
     if (this.state.burgerMenuOpen) {
-      burgerMenu = <BurgerMenu />
+      burgerMenu = <BurgerMenu click={this.backdropClickHandler} />
       backdrop = <MenuBackdrop click={this.backdropClickHandler} />
     }
     return <Router>
