@@ -9,7 +9,8 @@ const aboutSeed = [
     {
         title: "About",
         header: "",
-        description: ""
+        description: "", 
+        image: ""
     }
 ]
 
