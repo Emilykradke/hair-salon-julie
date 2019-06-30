@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
 import { Link } from "react-router-dom";
+import BurgerButton from './HamburgerButton';
 
 class Nav extends Component {
   render() {
     return (
       <div className='nav-container'>
         <nav>
+          <div className='burgerNav'>
+            <div className='burgerTitle'>
+              Menu
+            </div>
+          <BurgerButton click={this.props.burgerClickHandler} />
+          </div>
           <Scrollspy className='nav-list'
             items={ ['home', 'about', 'contact', 'services'] } offset={ -1000 }>
               <li>

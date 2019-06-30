@@ -38,12 +38,14 @@ const hoursSeed = [
     },
     {
         day: "Wednesday",
-        open: "Closed",
+        active: false,
+        open: "",
         close: ""
     },
     {
         day: "Thursday",
-        open: "Closed",
+        active: false,
+        open: "",
         close: ""
     },
     {
