@@ -9,70 +9,77 @@
   left: 0;
 
   nav {
-    height: 75px;
+    margin: auto;
     font-family: $font-body;
     text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
     color: $font-light;
-    max-width: 80%;
     letter-spacing: 1.5px;
 
     @media all and (min-width: 768px) {
-      max-width: 80%;
+      max-width: 85%;
     }
 
-    .burgerTitle {
-      float: left;
-      margin-right: 15px;
-      font-size: 24px;
-    }
-    .nav-list {
-
-      li {
-        list-style: none;
-        }
-
-      a {
-        text-decoration: none;
-        padding-right: 20px;
-        color: $bg-light;
-      }
+    @media all and (min-width: 1024px) {
+      max-width: 75%
     }
 
-    .nav-buttons {
+    .nav-contents {
+      height: 75px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+      width: 100%;
 
-      li {
-        list-style: none;
-        display: inline-block;
-        margin-left: 20px;
+      .nav-list {
 
-        .appointment-link {
-          text-decoration: none;
-          padding: 10px 20px;
-          background-color: $bg-light;
-          color: $font-dark;
-          font-weight: bold;
-          border-radius: 2px;
-          margin-right: 20px;
-        }
-
+        li {
+          list-style: none;
+          }
+  
         a {
           text-decoration: none;
+          padding-right: 20px;
           color: $bg-light;
-            
-          i {
-            font-size: 30px;
-            line-height: 0;
-            position: relative; 
-            top: 6px;
-          }
         }
       }
+  
+      .nav-buttons {
+  
+        li {
+          list-style: none;
+          display: inline-block;
+          margin-left: 20px;
+  
+          .appointment-link {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: $bg-light;
+            color: $font-dark;
+            font-weight: bold;
+            border-radius: 2px;
+            margin-right: 17px;
+          }
+  
+          a {
+            text-decoration: none;
+            color: $bg-light;
+              
+            i {
+              font-size: 30px;
+              line-height: 0;
+              position: relative; 
+              top: 6px;
+            }
+          }
 
-      
+
+        }    
+      }
+
+      @media all and (max-width: 767px) {
+        display: none;
+      }
     }
   }
 }
