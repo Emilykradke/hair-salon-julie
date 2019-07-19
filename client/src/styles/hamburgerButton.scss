@@ -1,24 +1,50 @@
-.burgerButton {
+.burgerNav {
+
+  .burgerButton {
+    font-family: $font-body;
+    text-transform: uppercase;
+    color: $font-light;
+    letter-spacing: 1.5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    height: 30px;
-    width: 40px;
+    height: 75px;
+    width: 115px;
+    margin: auto;
     background: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
     box-sizing: border-box;
+    
+    .burgerTitle {
+      margin-right: 5px;
+      font-size: 24px;
+    }
+
+    .menu-lines {
+      margin-top: 2.5px;
+
+      .buttonLine {
+        width: 35px;
+        margin-top: 6px;
+        height: 1px;
+        background: white;
+        border-radius: 50px;
+      }
+    }  
+  }
+  
+  .burgerButton:focus {
+      background: none;
+  }
+
+  @media all and (min-width: 768px) {
+    display: none;
+    width: 0px;
+  }
 }
 
-.burgerButton:focus {
-    background: none;
-}
 
-.buttonLine {
-    width: 40px;
-    height: 1px;
-    background: white;
-    border-radius: 50px;
-}
+
 
