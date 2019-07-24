@@ -15,7 +15,7 @@ import ModalBackdrop from './components/ModalBackdrop';
 class App extends Component {
   state = {
     burgerMenuOpen: false,
-    modalOpen: true
+    modalOpen: false
   }
   burgerToggleClickHndler = () => {
     this.setState((prevState) =>{
