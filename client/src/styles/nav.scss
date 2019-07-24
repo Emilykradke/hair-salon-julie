@@ -45,21 +45,21 @@
       }
   
       .nav-buttons {
+
+        .appointment-link {
+          text-decoration: none;
+          padding: 10px 20px;
+          background-color: $bg-light;
+          color: $font-dark;
+          font-weight: bold;
+          border-radius: 2px;
+          margin-right: 17px;
+        }
   
         li {
           list-style: none;
           display: inline-block;
           margin-left: 20px;
-  
-          .appointment-link {
-            text-decoration: none;
-            padding: 10px 20px;
-            background-color: $bg-light;
-            color: $font-dark;
-            font-weight: bold;
-            border-radius: 2px;
-            margin-right: 17px;
-          }
   
           a {
             text-decoration: none;
@@ -72,8 +72,6 @@
               top: 6px;
             }
           }
-
-
         }    
       }
 

@@ -72,8 +72,10 @@ class App extends Component {
       appointmentModal = <AppointmentModal click={this.appointmentCloseHandler} />
       appointmentBackdrop = <AppointmentBackdrop click={this.appointmentCloseHandler} />
     }
+      
+    return (
+    <Router>
 
-    return <Router>
       <Fragment>
         <Nav burgerClickHandler={this.burgerToggleClickHndler} />
         {burgerMenu}
@@ -89,6 +91,7 @@ class App extends Component {
         <Footer click={this.modalToggleClickHndler} />
       </Fragment>
     </Router>
+    )
   }
 };
 

@@ -25,7 +25,7 @@ class Nav extends Component {
             </Scrollspy>
 
             <ul className='nav-buttons'>
-              <li class='appointment-link'>Request Appointment</li>
+              <li className='appointment-link'>Request Appointment</li>
               <li><a href={'https://www.facebook.com/HairbyJulieG66/'} target={"_blank"}><i class="fab fa-facebook-square"></i></a></li>
               <li><a href={'https://www.instagram.com/hairbyjuliegsalon/?hl=en'} target={"_blank"}><i class="fab fa-instagram"></i></a></li>
               <li><a href={'https://www.yelp.com/biz/hair-by-julieg-katy'} target={"_blank"}><i class="fab fa-yelp"></i></a></li>
