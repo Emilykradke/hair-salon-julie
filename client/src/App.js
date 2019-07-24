@@ -10,12 +10,22 @@ import BurgerMenu from './components/BurgerMenu';
 import MenuBackdrop from './components/Backdrop';
 import LoginModal from './components/LoginModal';
 import ModalBackdrop from './components/ModalBackdrop';
+import AppointmentModal from './components/AppointmentModal';
+import AppointmentBackdrop from './components/AppointmentBackdrop';
 
 class App extends Component {
   state = {
     burgerMenuOpen: false,
-    modalOpen: false
+    modalOpen: false,
+    appointmentOpen: false
   }
+
+  appointmentClickHandler = () => {
+    this.setState((prevState) => {
+      return {appointmentOpen: !prevState.appointmentOpen}
+    })
+  }
+
   burgerToggleClickHndler = () => {
     this.setState((prevState) =>{
       return {burgerMenuOpen: !prevState.burgerMenuOpen}
@@ -36,11 +46,17 @@ class App extends Component {
     this.setState({modalOpen: false})
   }
 
+  appointmentCloseHandler = () => {
+    this.setState({appointmentOpen: false})
+  }
+
   render() {
     let burgerMenu;
     let backdrop;
     let modal;
     let modalBackdrop;
+    let appointmentModal;
+    let appointmentBackdrop;
 
     if (this.state.modalOpen) {
       modal = <LoginModal click={this.modalCloseHandler} />
@@ -51,14 +67,23 @@ class App extends Component {
       burgerMenu = <BurgerMenu click={this.backdropClickHandler} />
       backdrop = <MenuBackdrop click={this.backdropClickHandler} />
     }
+
+    if (this.state.appointmentOpen) {
+      appointmentModal = <AppointmentModal click={this.appointmentCloseHandler} />
+      appointmentBackdrop = <AppointmentBackdrop click={this.appointmentCloseHandler} />
+    }
+      
     return (
     <Router>
+
       <Fragment>
         <Nav burgerClickHandler={this.burgerToggleClickHndler} />
         {burgerMenu}
         {backdrop}
         {modal}
         {modalBackdrop}
+        {appointmentModal}
+        {appointmentBackdrop}
         <Home />
         <Services />
         <About />
