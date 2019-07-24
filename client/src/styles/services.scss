@@ -1,6 +1,6 @@
 .services {
   width: 100%;
-  background-color: $bg-light;
+  background-color: white;
 }
 
 .services-container-title {
@@ -10,35 +10,74 @@
   flex-direction: column;
   margin: 0 auto;
   padding-top: 100px;
-  height: 50px;
-  font-size: 40px;
+  // height: 50px;
+  font-family: $font-cursive;
+  font-size: 72px;
+  font-weight: 100;
+  border-bottom: 1px solid grey;
+  width: 40%;
 }
 
 .services-container {
   display: flex;
   flex-wrap: wrap;
-  width: 370px;
+  width: 320px;
   height: 100%;
   margin: auto;
   padding-bottom: 75px;
-  padding-top: 100px;
-  background-color: $bg-light;
+  padding-top: 75px;
+  background-color: white;
+
+  @media all and (min-width: 768px) {
+    width: 640px;
+  }
+
+  @media all and (min-width: 1024px) {
+    width: 960px;
+  }
+
+  @media all and (min-width: 1280px) {
+    width: 1260px;
+  }
 
   .service {
     display: inline-block;
-    margin: 30px;
+    margin: auto;
+    margin-top: 0px;
     padding: 15px;
-    width: 270px;
+    width: 250px;
     border-radius: 6px;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 
     img {
-      height: 300px;
-      width: 300px;
+      height: 250px;
+      width: 250px;
+      border-radius: 5%;
+      -webkit-box-shadow: 10px 10px 9px -3px rgba(128,126,128,0.75);
+      -moz-box-shadow: 10px 10px 9px -3px rgba(128,126,128,0.75);
+      box-shadow: 10px 10px 9px -3px rgba(128,126,128,0.75);
+    }
+
+    .title {
+      font-family: $font-title;
+      font-weight: bold;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 20px 0;
+      color: #C4A3A6;
+    }
+
+    .description {
+      font-family: $font-body;
+      letter-spacing: .5px;
+      font-size: 18px;
+      font-weight: 600;
     }
   }
 }
