@@ -4,7 +4,7 @@ class Footer extends Component {
   render() {
     return (
       <div>
-        
+        <p onClick={this.props.click}>Login Modal</p>
       </div>
     );
   }

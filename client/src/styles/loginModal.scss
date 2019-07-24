@@ -1,0 +1,17 @@
+.loginModal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 90%;
+    background-color: whitesmoke;
+    z-index: 200;
+  }
+
+.modalX {
+    margin-left: 96%;
+    margin-top: 7px;
+    font-size: 30px;
+    cursor: pointer;
+}

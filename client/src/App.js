@@ -5,14 +5,16 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Services from './components/Services';
-// import Admin from './pages/Admin';
 import Footer from './components/Footer';
 import BurgerMenu from './components/BurgerMenu';
 import MenuBackdrop from './components/Backdrop';
+import LoginModal from './components/LoginModal';
+import ModalBackdrop from './components/ModalBackdrop';
 
 class App extends Component {
   state = {
-    burgerMenuOpen: false
+    burgerMenuOpen: false,
+    modalOpen: false
   }
   burgerToggleClickHndler = () => {
     this.setState((prevState) =>{
@@ -20,13 +22,31 @@ class App extends Component {
     })
   } 
 
+  modalToggleClickHndler = () => {
+    this.setState((prevState) =>{
+      return {modalOpen: !prevState.modalOpen}
+    })
+  }
+
   backdropClickHandler = () => {
     this.setState({burgerMenuOpen: false})
+  }
+
+  modalCloseHandler = () => {
+    this.setState({modalOpen: false})
   }
 
   render() {
     let burgerMenu;
     let backdrop;
+    let modal;
+    let modalBackdrop;
+
+    if (this.state.modalOpen) {
+      modal = <LoginModal click={this.modalCloseHandler} />
+      modalBackdrop = <ModalBackdrop click={this.modalCloseHandler} />
+    }
+
     if (this.state.burgerMenuOpen) {
       burgerMenu = <BurgerMenu click={this.backdropClickHandler} />
       backdrop = <MenuBackdrop click={this.backdropClickHandler} />
@@ -35,13 +55,15 @@ class App extends Component {
     <Router>
       <Fragment>
         <Nav burgerClickHandler={this.burgerToggleClickHndler} />
-          {burgerMenu}
-          {backdrop}
+        {burgerMenu}
+        {backdrop}
+        {modal}
+        {modalBackdrop}
         <Home />
         <Services />
         <About />
         <Contact />
-        <Footer />
+        <Footer click={this.modalToggleClickHndler} />
       </Fragment>
     </Router>
     )
