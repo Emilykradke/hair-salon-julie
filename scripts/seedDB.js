@@ -17,7 +17,7 @@ const aboutSeed = [
 const contactSeed = [
     {
         phone: "(989) 598-3691",
-        address: "511 S Mason Rd Ste 114",
+        address: "511 S Mason Rd",
         city: "Katy",
         state: "TX",
         zip: "77450",
@@ -29,40 +29,33 @@ const contactSeed = [
 const hoursSeed = [
     {
         day: "Monday",
-        open: "9:15 am",
-        close: "3:30 pm"
+        hours: " 9:15a - 3:30p"
     },
     {
         day: "Tuesday",
-        open: "9:15 am",
-        close: "3:30 pm"
+        hours: "9:15a - 3:30p"
     },
     {
         day: "Wednesday",
         active: false,
-        open: "",
-        close: ""
+        hours: "CLOSED"
     },
     {
         day: "Thursday",
         active: false,
-        open: "",
-        close: ""
+        hours: "CLOSED"
     },
     {
         day: "Friday",
-        open: "9:15 am",
-        close: "12:00 pm"
+        hours: "9:15a - 12:00p"
     },
     {
         day: "Saturday",
-        open: "9:15 am",
-        close: "11:30 am"
+        hours: "9:15a - 11:30a"
     },
     {
         day: "Sunday",
-        open: "10:00 am",
-        close: "2:30 pm"
+        hours: "10:00a - 2:30p"
     }
 ]
 
