@@ -2,7 +2,7 @@ import React from 'react';
 
 const AppointmentModal = props => (
     <div className='loginModal'>
-        <p className='modalX'>x</p>
+        <p className='modalX' onClick={props.click}>x</p>
     </div>
 )
 
