@@ -77,7 +77,7 @@ class App extends Component {
     <Router>
 
       <Fragment>
-        <Nav burgerClickHandler={this.burgerToggleClickHndler} />
+        <Nav burgerClickHandler={this.burgerToggleClickHndler} appointmentClickHandler={this.appointmentClickHandler} />
         {burgerMenu}
         {backdrop}
         {modal}
