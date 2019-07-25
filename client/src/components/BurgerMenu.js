@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import Scrollspy from 'react-scrollspy';
 
 const BurgerMenu = props => (
@@ -15,7 +14,7 @@ const BurgerMenu = props => (
         </Scrollspy>
 
         <ul className='nav-buttons'>
-          <li className="appointment-button"><Link to='/Appointment' class='appointment-link'>Request Appointment</Link></li>
+          <li className="appointment-button" onClick={(event) => {props.click(event); props.appointmentClick(event)}}>Request Appointment</li>
           <li><a href={'https://www.facebook.com/HairbyJulieG66/'} target={"_blank"}><i class="fab fa-facebook-square"></i></a></li>
           <li><a href={'https://www.instagram.com/hairbyjuliegsalon/?hl=en'} target={"_blank"}><i class="fab fa-instagram"></i></a></li>
           <li><a href={'https://www.yelp.com/biz/hair-by-julieg-katy'} target={"_blank"}><i class="fab fa-yelp"></i></a></li>

@@ -64,7 +64,7 @@ class App extends Component {
     }
 
     if (this.state.burgerMenuOpen) {
-      burgerMenu = <BurgerMenu click={this.backdropClickHandler} />
+      burgerMenu = <BurgerMenu click={this.backdropClickHandler} appointmentClick={this.appointmentClickHandler} />
       backdrop = <MenuBackdrop click={this.backdropClickHandler} />
     }
 
