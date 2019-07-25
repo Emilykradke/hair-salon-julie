@@ -6,7 +6,7 @@ class Footer extends Component {
 
   state = {
     hours: [],
-    contact: {}
+    contact: []
   }
 
   componentDidMount() {
@@ -28,7 +28,7 @@ class Footer extends Component {
     API.getContact() 
     .then(res =>
       this.setState({
-        contact: res.data
+        contact: res.data[0]
       }, () => {console.log(this.state.contact)})
     )
     .catch(err => console.log(err))
@@ -71,11 +71,28 @@ class Footer extends Component {
 
             <h2>How to Find Me</h2>
             <div className='contact'>
-                <div className='address'>
+                <div className='address-container'>
                   <p className='street'>
-                    {contact.address}
+                    {contact.address}, Suite {contact.suite}
                   </p>
-                </div>    
+                  <p className='city-state-zip'>
+                    {contact.city}, {contact.state} {contact.zip}
+                  </p>
+                </div>  
+
+                <div className='phone-container'>
+                  <p className='phone'>
+                    {contact.phone}
+                  </p>
+                </div>  
+
+                <div className='icon-container'>
+                <ul className='nav-buttons'>
+                  <li><a href={'https://www.facebook.com/HairbyJulieG66/'} target={"_blank"}><i class="fab fa-facebook-square"></i></a></li>
+                  <li><a href={'https://www.instagram.com/hairbyjuliegsalon/?hl=en'} target={"_blank"}><i class="fab fa-instagram"></i></a></li>
+                  <li><a href={'https://www.yelp.com/biz/hair-by-julieg-katy'} target={"_blank"}><i class="fab fa-yelp"></i></a></li>
+                </ul>
+                </div>
             </div>
 
           </div>

@@ -17,7 +17,7 @@ const aboutSeed = [
 const contactSeed = [
     {
         phone: "(989) 598-3691",
-        address: "511 S Mason Rd Ste 114",
+        address: "511 S Mason Rd",
         city: "Katy",
         state: "TX",
         zip: "77450",
