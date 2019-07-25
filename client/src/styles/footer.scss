@@ -1,0 +1,18 @@
+.link-container {
+  
+}
+
+.copyright-container {
+  background-color: $bg-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+
+  .copyright {
+    color: $bg-light;
+    font-family: $font-body;
+    font-size: 18px;
+  }
+}
