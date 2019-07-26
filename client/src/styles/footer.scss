@@ -1,13 +1,146 @@
-.link-container {
+.footer-info {
+  background-color: $bg-grey;
   
+  .link-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    background-color: $bg-grey;
+    padding: 25px 0;
+
+    @media all and (min-width: 600px) {
+      flex-direction: row;
+      width: 80%;
+    }
+
+    @media all and (min-width: 1024px) {
+      flex-direction: row;
+      width: 60%;
+    }
+  
+    .quicklinks {
+      text-align: center;
+
+      h2 {
+        padding-bottom: 15px;
+        font-family: $font-title;
+
+        @media all and (max-width: 600px) {
+          padding-bottom: 10px;
+        }
+      }
+
+      p {
+        font-family: $font-body;
+        color: $font-pink;
+        cursor: pointer;
+      }
+  
+      .nav-list {
+        list-style-type: none;
+        font-family: $font-body;
+  
+        li {
+          
+          a {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            color: $font-pink;
+          }
+        }
+      }
+    }
+  
+    .hours-container {
+      text-align: center;
+
+      h2 {
+        padding-bottom: 15px;
+        font-family: $font-title;
+
+        @media all and (max-width: 600px) {
+          margin-top: 20px;
+          padding-bottom: 10px;
+        }
+      }
+      
+      p {
+        margin-bottom: 2px;
+        font-family: $font-body;
+      }
+
+    }
+  
+    .contact-container {
+      text-align: center;
+
+      h2 {
+        padding-bottom: 15px;
+        font-family: $font-title;
+
+        @media all and (max-width: 600px) {
+          margin-top: 20px;
+          padding-bottom: 10px;
+        }
+      }
+
+      .address-container {
+        font-family: $font-body;
+
+        .street {
+          color: $font-pink;
+        }
+        
+        p {
+          margin-bottom: 2px;
+        }
+      }
+
+      .phone-container {
+        font-family: $font-body;
+        color: $font-pink;
+        margin-top: 10px;
+      }
+  
+      .icon-container {
+  
+        .nav-buttons {
+          margin-top: 20px;
+
+          .facebook{
+            margin-right: 15px;
+          }
+
+          .insta {
+            margin-right: 15px;
+          }
+  
+          li {
+            list-style: none;
+            display: inline-block;
+  
+            a {
+              text-decoration: none;
+              color: $bg-dark;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
 
 .copyright-container {
   background-color: $bg-dark;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   padding: 20px 0;
 
   .copyright {
