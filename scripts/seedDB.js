@@ -7,10 +7,14 @@ mongoose.connect(
 
 const aboutSeed = [
     {
-        title: "About",
-        header: "",
-        description: "", 
-        image: ""
+        title: "Julie's Story",
+        header: "The greatest joy is celebrating the beauty within you",
+        description: "Hair by Julie G, based in Katy, Texas provides numerous hair services such as haircutting, styling, hair extensions, hair coloring, and keratin and Olaplex treatments. Julie G also provides services for special occasions like weddings and parties.", 
+        about: "Julie G is a perfectionist who does not stop with adequeate, but rather makes it her goal to ensure that you are thrilled with your look.",
+        image: "https://i.ibb.co/1X1Nmt9/julieG.png", 
+        name: "Julie G",
+        jobDescription: "Owner & Master Hair Stylist and Colorist",
+        specialty: "Hair Transformations"
     }
 ]
 
