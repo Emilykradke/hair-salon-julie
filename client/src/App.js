@@ -12,6 +12,7 @@ import LoginModal from './components/LoginModal';
 import ModalBackdrop from './components/ModalBackdrop';
 import AppointmentModal from './components/AppointmentModal';
 import AppointmentBackdrop from './components/AppointmentBackdrop';
+import Review from './components/Review';
 
 class App extends Component {
   state = {
@@ -85,8 +86,9 @@ class App extends Component {
         {appointmentModal}
         {appointmentBackdrop}
         <Home />
-        <Services />
         <About />
+        <Review />
+        <Services />
         <Contact />
         <Footer click={this.modalToggleClickHndler} />
       </Fragment>
