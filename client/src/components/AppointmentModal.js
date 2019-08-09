@@ -16,6 +16,24 @@ class AppointmentModal extends Component {
             <p className='walkins'>
               Please note that Julie G does not accept walk-in appointments
             </p>
+
+            <div className='form-block'>
+              <label>Your Name (Required)</label>
+              <input type='text' name='name' id='name' />
+              <label>Your Email (Required)</label>
+              <input type='email' name='email' id='email' />
+              <label>Phone Number (Required)</label>
+              <input type='tel' name='phone' id='phone' />
+              <label>Requested Service (Required)</label>
+              <input type='text' name='service' id='service' />
+              <label>Requested Date (Required)</label>
+              <input type='date' name='date' id='date' />
+              <label>Comments</label>
+              <textarea rows='10' cols='100' />
+              <button className='btn-submit'>
+                Request Appointment
+              </button>
+            </div>
           </fieldset>
         </form>
       </div>
