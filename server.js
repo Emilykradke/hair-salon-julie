@@ -44,7 +44,7 @@ app.use(logger('dev'));
 |* SET UP DATABASE *| 
 |*******************/
 // Connect to db
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/salon-DB";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/hair-salon-julieg";
 mongoose.connect(MONGODB_URI);
 const db = mongoose.connection;
 
